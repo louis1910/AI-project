@@ -148,7 +148,7 @@ int pourfullY(State state, State *result){
 }
 
 int makeNullX(State state, State *result){
-	if(result->x != empty){
+	if(state.x != empty){
 		result->x = empty;
 		result->y = state.y;
 		return 1;
@@ -157,7 +157,7 @@ int makeNullX(State state, State *result){
 }
 
 int makeNullY(State state, State *result){
-	if(result->y != empty){
+	if(state.y != empty){
 		result->y = empty;
 		result->x = state.x;
 		return 1;
